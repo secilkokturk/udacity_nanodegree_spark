@@ -13,7 +13,7 @@ numpy
 datetime
 matplotlib
 itertools
-re
+sklearn
 
 # Data
 The data is an event log data coming from two months of history from a music playing app. The data includes many events such as login, logout, song play, next song, thumbs up, upgrade, cancel, etc.
@@ -75,13 +75,21 @@ Features Calculated from other columns:
 
 Churn is defined by the Cancellation Confirmation event.
 
+A PCA is performed before modeling
+
 # Model
-an XGboost model is fitted on the data
+A Random Forest and Logistic Regression model is fitted on the data.
+20% of the data is randomly selected for test and % 20 is separated for validation from within the training set.
+
+
 # Evaluation
 F1 score is used in order to improve the model
+The Logistic Regression Model presented a higher accuracy (84%) and a higher F1 (36%) with respect to the random forest which had accuracy of (75%) and F1 of (15%).
+The logistic regression model presented an F1 Score of 78.6% on the validation data.
 
 # Files 
-The bucket includes the .ipynb file which has the code along with this README.md file
+The bucket includes the .ipynb file, .html file, which have the code along with this README.md file
 
 # Blog Post
 I have a detailed blog post about the project on my medium page: https://medium.com/@kokturksecil
+Link: https://kokturksecil.medium.com/spark-project-sparkify-bb96feba4d84
