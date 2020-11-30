@@ -13143,7 +13143,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[120]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import libraries</span>
@@ -13226,14 +13226,14 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;spark.driver.host&#39;, &#39;a4e20d4126f3&#39;),
- (&#39;spark.rdd.compress&#39;, &#39;True&#39;),
- (&#39;spark.driver.port&#39;, &#39;46281&#39;),
+<pre>[(&#39;spark.rdd.compress&#39;, &#39;True&#39;),
  (&#39;spark.serializer.objectStreamReset&#39;, &#39;100&#39;),
  (&#39;spark.master&#39;, &#39;local[*]&#39;),
+ (&#39;spark.app.id&#39;, &#39;local-1606696613767&#39;),
+ (&#39;spark.driver.port&#39;, &#39;44167&#39;),
  (&#39;spark.executor.id&#39;, &#39;driver&#39;),
  (&#39;spark.submit.deployMode&#39;, &#39;client&#39;),
- (&#39;spark.app.id&#39;, &#39;local-1606687690066&#39;),
+ (&#39;spark.driver.host&#39;, &#39;546e7c622d8d&#39;),
  (&#39;spark.ui.showConsoleProgress&#39;, &#39;true&#39;),
  (&#39;spark.app.name&#39;, &#39;Sparkify Project Session&#39;)]</pre>
 </div>
@@ -13274,7 +13274,7 @@ div#notebook {
         <div>
             <p><b>SparkContext</b></p>
 
-            <p><a href="http://a4e20d4126f3:4040">Spark UI</a></p>
+            <p><a href="http://546e7c622d8d:4040">Spark UI</a></p>
 
             <dl>
               <dt>Version</dt>
@@ -13394,7 +13394,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">event_data</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
@@ -13734,7 +13734,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#how many distinct userId s</span>
@@ -13771,7 +13771,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[113]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM event_data_table LIMIT 2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13808,7 +13808,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">count_group_in_table</span><span class="p">(</span><span class="n">columns</span><span class="p">,</span> <span class="n">tablename</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
@@ -13822,7 +13822,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#top interactions per user id</span>
@@ -13869,7 +13869,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#location distributions</span>
@@ -13916,7 +13916,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#distinct authorization types</span>
@@ -13954,7 +13954,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#methods</span>
@@ -13992,7 +13992,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#gender distributions</span>
@@ -14030,7 +14030,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#gender distributions, why null?</span>
@@ -14070,7 +14070,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#status distributions</span>
@@ -14109,7 +14109,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#userAgent distributions</span>
@@ -14156,7 +14156,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#time range</span>
@@ -14193,7 +14193,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#page distributions</span>
@@ -14263,7 +14263,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">event_data</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">&quot;page = &#39;Cancellation Confirmation&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">52</span><span class="p">)</span>
@@ -14350,7 +14350,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#find out the last status of each userId</span>
@@ -14375,7 +14375,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">last_user_state</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -14391,7 +14391,7 @@ only showing top 10 rows
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[126]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -14409,7 +14409,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spark</span><span class="o">.</span><span class="n">catalog</span><span class="o">.</span><span class="n">dropTempView</span><span class="p">(</span><span class="s2">&quot;last_status_table&quot;</span><span class="p">)</span>
@@ -14468,7 +14468,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#state name</span>
@@ -14482,7 +14482,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#device type from browser/app info</span>
@@ -14500,7 +14500,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">last_user_state</span><span class="o">.</span><span class="n">printSchema</span>
@@ -14516,7 +14516,7 @@ only showing top 10 rows
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -14533,7 +14533,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">event_data</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
@@ -14583,7 +14583,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#partition by user</span>
@@ -14597,7 +14597,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_list</span> <span class="o">=</span> <span class="n">event_data</span>\
@@ -14637,7 +14637,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_list</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
@@ -14695,7 +14695,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_list</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -14711,7 +14711,7 @@ only showing top 10 rows
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[47]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -14729,7 +14729,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[136]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_list</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -14745,7 +14745,7 @@ only showing top 10 rows
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[136]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -14762,7 +14762,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">feature_list</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;feature_list_table&quot;</span><span class="p">)</span>
@@ -14776,7 +14776,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[138]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;select * from feature_list_table limit 2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -14813,7 +14813,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_merged</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;select t1.userId, </span><span class="se">\</span>
@@ -14834,7 +14834,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spark</span><span class="o">.</span><span class="n">catalog</span><span class="o">.</span><span class="n">dropTempView</span><span class="p">(</span><span class="s2">&quot;last_user_state_table&quot;</span><span class="p">)</span>
@@ -14850,7 +14850,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_merged</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
@@ -14917,7 +14917,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_merged</span><span class="o">=</span><span class="n">features_merged</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
@@ -14930,7 +14930,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#drop duplicate row for userid 125</span>
@@ -14944,7 +14944,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span> <span class="o">=</span> <span class="n">features_merged</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
@@ -14957,7 +14957,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">features_merged</span>
@@ -14977,7 +14977,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Encode categorical variables: gender, level, state_abbr, device_clean</span>
@@ -14995,7 +14995,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -15011,7 +15011,7 @@ only showing top 10 rows
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[57]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -15170,7 +15170,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">handle_unknown</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
@@ -15185,7 +15185,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc_df_gender</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -15201,7 +15201,7 @@ only showing top 10 rows
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[57]:</div>
 
 
 
@@ -15252,7 +15252,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span> <span class="o">=</span> <span class="n">features_df</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">enc_df_gender</span><span class="p">)</span>
@@ -15265,7 +15265,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc_df_state</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">enc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features_df</span><span class="p">[[</span><span class="s1">&#39;state_abbr_&#39;</span><span class="p">]])</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
@@ -15278,7 +15278,7 @@ only showing top 10 rows
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc_df_state</span><span class="o">.</span><span class="n">dtypes</span>
@@ -15294,7 +15294,7 @@ only showing top 10 rows
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[62]:</div>
+    <div class="prompt output_prompt">Out[60]:</div>
 
 
 
@@ -15350,7 +15350,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc_df_state</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;state0&quot;</span><span class="p">,</span>  <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;state1&quot;</span><span class="p">,</span>  <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;state2&quot;</span><span class="p">,</span>  <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;state3&quot;</span><span class="p">,</span>  <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;state4&quot;</span><span class="p">,</span>  <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;state5&quot;</span><span class="p">,</span>  <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;state6&quot;</span><span class="p">,</span>  <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;state7&quot;</span><span class="p">,</span>  <span class="mi">8</span><span class="p">:</span> <span class="s2">&quot;state8&quot;</span><span class="p">,</span>  <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;state9&quot;</span><span class="p">,</span>  <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;state10&quot;</span><span class="p">,</span>  <span class="mi">11</span><span class="p">:</span> <span class="s2">&quot;state11&quot;</span><span class="p">,</span>  <span class="mi">12</span><span class="p">:</span> <span class="s2">&quot;state12&quot;</span><span class="p">,</span>  <span class="mi">13</span><span class="p">:</span> <span class="s2">&quot;state13&quot;</span><span class="p">,</span>  <span class="mi">14</span><span class="p">:</span> <span class="s2">&quot;state14&quot;</span><span class="p">,</span>  <span class="mi">15</span><span class="p">:</span> <span class="s2">&quot;state15&quot;</span><span class="p">,</span>  <span class="mi">16</span><span class="p">:</span> <span class="s2">&quot;state16&quot;</span><span class="p">,</span>  <span class="mi">17</span><span class="p">:</span> <span class="s2">&quot;state17&quot;</span><span class="p">,</span>  <span class="mi">18</span><span class="p">:</span> <span class="s2">&quot;state18&quot;</span><span class="p">,</span>  <span class="mi">19</span><span class="p">:</span> <span class="s2">&quot;state19&quot;</span><span class="p">,</span>  <span class="mi">20</span><span class="p">:</span> <span class="s2">&quot;state20&quot;</span><span class="p">,</span>  <span class="mi">21</span><span class="p">:</span> <span class="s2">&quot;state21&quot;</span><span class="p">,</span>  <span class="mi">22</span><span class="p">:</span> <span class="s2">&quot;state22&quot;</span><span class="p">,</span>  <span class="mi">23</span><span class="p">:</span> <span class="s2">&quot;state23&quot;</span><span class="p">,</span>  <span class="mi">24</span><span class="p">:</span> <span class="s2">&quot;state24&quot;</span><span class="p">,</span>  <span class="mi">25</span><span class="p">:</span> <span class="s2">&quot;state25&quot;</span><span class="p">,</span>  <span class="mi">26</span><span class="p">:</span> <span class="s2">&quot;state26&quot;</span><span class="p">,</span>  <span class="mi">27</span><span class="p">:</span> <span class="s2">&quot;state27&quot;</span><span class="p">,</span>  <span class="mi">28</span><span class="p">:</span> <span class="s2">&quot;state28&quot;</span><span class="p">,</span>  <span class="mi">29</span><span class="p">:</span> <span class="s2">&quot;state29&quot;</span><span class="p">,</span>  <span class="mi">30</span><span class="p">:</span> <span class="s2">&quot;state30&quot;</span><span class="p">,</span>  <span class="mi">31</span><span class="p">:</span> <span class="s2">&quot;state31&quot;</span><span class="p">,</span>  <span class="mi">32</span><span class="p">:</span> <span class="s2">&quot;state32&quot;</span><span class="p">,</span>  <span class="mi">33</span><span class="p">:</span> <span class="s2">&quot;state33&quot;</span><span class="p">,</span>  <span class="mi">34</span><span class="p">:</span> <span class="s2">&quot;state34&quot;</span><span class="p">,</span>  <span class="mi">35</span><span class="p">:</span> <span class="s2">&quot;state35&quot;</span><span class="p">,</span>  <span class="mi">36</span><span class="p">:</span> <span class="s2">&quot;state36&quot;</span><span class="p">,</span>  <span class="mi">37</span><span class="p">:</span> <span class="s2">&quot;state37&quot;</span><span class="p">,</span>  <span class="mi">38</span><span class="p">:</span> <span class="s2">&quot;state38&quot;</span> <span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15363,7 +15363,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span> <span class="o">=</span> <span class="n">features_df</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">enc_df_state</span><span class="p">)</span>
@@ -15376,7 +15376,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc_df_device</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">enc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features_df</span><span class="p">[[</span><span class="s1">&#39;device_clean_&#39;</span><span class="p">]])</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
@@ -15389,7 +15389,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc_df_device</span><span class="o">.</span><span class="n">dtypes</span>
@@ -15405,7 +15405,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[66]:</div>
+    <div class="prompt output_prompt">Out[64]:</div>
 
 
 
@@ -15428,7 +15428,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">enc_df_device</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;device0&quot;</span><span class="p">,</span>  <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;device1&quot;</span><span class="p">,</span>  <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;device2&quot;</span><span class="p">,</span>  <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;device3&quot;</span><span class="p">,</span>  <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;device4&quot;</span><span class="p">,</span>  <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;device5&quot;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15441,7 +15441,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span> <span class="o">=</span> <span class="n">features_df</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">enc_df_device</span><span class="p">)</span>
@@ -15454,7 +15454,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -15470,7 +15470,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[69]:</div>
+    <div class="prompt output_prompt">Out[67]:</div>
 
 
 
@@ -15572,7 +15572,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#calculate correlations with churn and the variables</span>
@@ -15585,7 +15585,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">=</span><span class="n">features_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -15598,7 +15598,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
@@ -15614,7 +15614,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[72]:</div>
+    <div class="prompt output_prompt">Out[70]:</div>
 
 
 
@@ -22049,7 +22049,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;state_abbr&quot;</span><span class="p">,</span> <span class="s2">&quot;Churn&quot;</span><span class="p">])[</span><span class="s2">&quot;Churn&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -22065,13 +22065,13 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[77]:</div>
+    <div class="prompt output_prompt">Out[71]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7eff08b6c9b0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3f69c852e8&gt;</pre>
 </div>
 
 </div>
@@ -22097,7 +22097,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;device_clean&quot;</span><span class="p">,</span> <span class="s2">&quot;Churn&quot;</span><span class="p">])[</span><span class="s2">&quot;Churn&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -22113,13 +22113,13 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[78]:</div>
+    <div class="prompt output_prompt">Out[72]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7eff08b1d128&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3f69c66c50&gt;</pre>
 </div>
 
 </div>
@@ -22145,7 +22145,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;gender&quot;</span><span class="p">,</span> <span class="s2">&quot;Churn&quot;</span><span class="p">])[</span><span class="s2">&quot;Churn&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -22161,13 +22161,13 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[79]:</div>
+    <div class="prompt output_prompt">Out[73]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7eff084974a8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3f68372a58&gt;</pre>
 </div>
 
 </div>
@@ -22193,7 +22193,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;level&quot;</span><span class="p">,</span> <span class="s2">&quot;Churn&quot;</span><span class="p">])[</span><span class="s2">&quot;Churn&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -22209,13 +22209,13 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[80]:</div>
+    <div class="prompt output_prompt">Out[74]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7eff08464898&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3f682562b0&gt;</pre>
 </div>
 
 </div>
@@ -22241,7 +22241,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="p">[</span><span class="s1">&#39;tenure&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
@@ -22257,13 +22257,13 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[82]:</div>
+    <div class="prompt output_prompt">Out[75]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7eff081ff8d0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3f6817e518&gt;</pre>
 </div>
 
 </div>
@@ -22289,7 +22289,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Churn_1</span> <span class="o">=</span> <span class="n">features_df</span><span class="p">[(</span><span class="n">features_df</span><span class="p">[</span><span class="s1">&#39;Churn&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">)]</span>
@@ -22314,14 +22314,19 @@ dtype: object</pre>
     <div class="prompt"></div>
 
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-76-91435023b2da&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> Churn_0 <span class="ansi-blue-fg">=</span> features_df<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">(</span>features_df<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;Churn&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">==</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> 
+<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>pyplot<span class="ansi-blue-fg">.</span>hist<span class="ansi-blue-fg">(</span>Churn_1<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;tenure&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> bins<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10</span><span class="ansi-blue-fg">,</span> alpha<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.5</span><span class="ansi-blue-fg">,</span> label<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;Churn = 1&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> pyplot<span class="ansi-blue-fg">.</span>hist<span class="ansi-blue-fg">(</span>Churn_0<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;tenure&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> bins<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10</span><span class="ansi-blue-fg">,</span> alpha<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.5</span><span class="ansi-blue-fg">,</span> label<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;Churn = 0&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> pyplot<span class="ansi-blue-fg">.</span>legend<span class="ansi-blue-fg">(</span>loc<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;upper right&#39;</span><span class="ansi-blue-fg">)</span>
 
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
+<span class="ansi-red-fg">NameError</span>: name &#39;pyplot&#39; is not defined</pre>
 </div>
-
 </div>
 
 </div>
@@ -22330,7 +22335,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -22340,1017 +22345,10 @@ dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[98]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>userId</th>
-      <th>tenure</th>
-      <th>Churn</th>
-      <th>firstName</th>
-      <th>lastName</th>
-      <th>gender</th>
-      <th>level</th>
-      <th>registration</th>
-      <th>state_abbr</th>
-      <th>device_clean</th>
-      <th>f_total_interactions</th>
-      <th>f_artist_count</th>
-      <th>f_song_count</th>
-      <th>f_session_count</th>
-      <th>p_homepage_lands</th>
-      <th>p_nextsongs</th>
-      <th>p_thumbsup</th>
-      <th>p_thumbsdown</th>
-      <th>p_addtoplaylist</th>
-      <th>p_addfriend</th>
-      <th>p_rolladvert</th>
-      <th>p_logout</th>
-      <th>p_downgrade</th>
-      <th>p_settings</th>
-      <th>p_help</th>
-      <th>p_upgrade</th>
-      <th>p_about</th>
-      <th>p_savesettings</th>
-      <th>p_error</th>
-      <th>p_submitupgrade</th>
-      <th>p_submitdowngrade</th>
-      <th>v_http307</th>
-      <th>v_http400</th>
-      <th>v_methodput</th>
-      <th>v_methodget</th>
-      <th>gender_</th>
-      <th>state_abbr_</th>
-      <th>device_clean_</th>
-      <th>gender_1</th>
-      <th>gender_2</th>
-      <th>state0</th>
-      <th>state1</th>
-      <th>state2</th>
-      <th>state3</th>
-      <th>state4</th>
-      <th>state5</th>
-      <th>state6</th>
-      <th>state7</th>
-      <th>state8</th>
-      <th>state9</th>
-      <th>state10</th>
-      <th>state11</th>
-      <th>state12</th>
-      <th>state13</th>
-      <th>state14</th>
-      <th>state15</th>
-      <th>state16</th>
-      <th>state17</th>
-      <th>state18</th>
-      <th>state19</th>
-      <th>state20</th>
-      <th>state21</th>
-      <th>state22</th>
-      <th>state23</th>
-      <th>state24</th>
-      <th>state25</th>
-      <th>state26</th>
-      <th>state27</th>
-      <th>state28</th>
-      <th>state29</th>
-      <th>state30</th>
-      <th>state31</th>
-      <th>state32</th>
-      <th>state33</th>
-      <th>state34</th>
-      <th>state35</th>
-      <th>state36</th>
-      <th>state37</th>
-      <th>state38</th>
-      <th>device0</th>
-      <th>device1</th>
-      <th>device2</th>
-      <th>device3</th>
-      <th>device4</th>
-      <th>device5</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>100010</td>
-      <td>3820418000</td>
-      <td>0</td>
-      <td>Darianna</td>
-      <td>Carpenter</td>
-      <td>F</td>
-      <td>free</td>
-      <td>1538016340000</td>
-      <td>CT</td>
-      <td>iPhone</td>
-      <td>381</td>
-      <td>252</td>
-      <td>269</td>
-      <td>7</td>
-      <td>11</td>
-      <td>275</td>
-      <td>17</td>
-      <td>5</td>
-      <td>7</td>
-      <td>4</td>
-      <td>52</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>31</td>
-      <td>0</td>
-      <td>313</td>
-      <td>68</td>
-      <td>0</td>
-      <td>6</td>
-      <td>5</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>200002</td>
-      <td>3930924000</td>
-      <td>0</td>
-      <td>Dominic</td>
-      <td>Torres</td>
-      <td>M</td>
-      <td>paid</td>
-      <td>1536269906000</td>
-      <td>WI</td>
-      <td>iPhone</td>
-      <td>474</td>
-      <td>339</td>
-      <td>378</td>
-      <td>6</td>
-      <td>20</td>
-      <td>387</td>
-      <td>21</td>
-      <td>6</td>
-      <td>8</td>
-      <td>4</td>
-      <td>7</td>
-      <td>5</td>
-      <td>5</td>
-      <td>3</td>
-      <td>2</td>
-      <td>2</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>37</td>
-      <td>0</td>
-      <td>432</td>
-      <td>42</td>
-      <td>1</td>
-      <td>37</td>
-      <td>5</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>125</td>
-      <td>1774000</td>
-      <td>1</td>
-      <td>Mason</td>
-      <td>Hart</td>
-      <td>M</td>
-      <td>free</td>
-      <td>1533157139000</td>
-      <td>TX</td>
-      <td>Macintosh</td>
-      <td>11</td>
-      <td>8</td>
-      <td>8</td>
-      <td>1</td>
-      <td>0</td>
-      <td>8</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>9</td>
-      <td>2</td>
-      <td>1</td>
-      <td>33</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>124</td>
-      <td>5183736000</td>
-      <td>0</td>
-      <td>Nicole</td>
-      <td>Beck</td>
-      <td>F</td>
-      <td>paid</td>
-      <td>1532224335000</td>
-      <td>NJ</td>
-      <td>Macintosh</td>
-      <td>4825</td>
-      <td>2232</td>
-      <td>3339</td>
-      <td>29</td>
-      <td>176</td>
-      <td>4079</td>
-      <td>171</td>
-      <td>41</td>
-      <td>118</td>
-      <td>74</td>
-      <td>4</td>
-      <td>59</td>
-      <td>41</td>
-      <td>20</td>
-      <td>23</td>
-      <td>0</td>
-      <td>7</td>
-      <td>6</td>
-      <td>6</td>
-      <td>0</td>
-      <td>0</td>
-      <td>351</td>
-      <td>0</td>
-      <td>4548</td>
-      <td>277</td>
-      <td>0</td>
-      <td>24</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>51</td>
-      <td>1363340000</td>
-      <td>1</td>
-      <td>Ethan</td>
-      <td>Johnson</td>
-      <td>M</td>
-      <td>paid</td>
-      <td>1538080987000</td>
-      <td>KY</td>
-      <td>Windows</td>
-      <td>2464</td>
-      <td>1385</td>
-      <td>1854</td>
-      <td>10</td>
-      <td>75</td>
-      <td>2111</td>
-      <td>100</td>
-      <td>21</td>
-      <td>52</td>
-      <td>28</td>
-      <td>0</td>
-      <td>24</td>
-      <td>23</td>
-      <td>12</td>
-      <td>12</td>
-      <td>0</td>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>175</td>
-      <td>0</td>
-      <td>2338</td>
-      <td>126</td>
-      <td>1</td>
-      <td>14</td>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>7</td>
-      <td>4387742000</td>
-      <td>0</td>
-      <td>Maddox</td>
-      <td>Johnson</td>
-      <td>M</td>
-      <td>free</td>
-      <td>1536667576000</td>
-      <td>WA</td>
-      <td>Windows</td>
-      <td>201</td>
-      <td>142</td>
-      <td>148</td>
-      <td>7</td>
-      <td>10</td>
-      <td>150</td>
-      <td>7</td>
-      <td>1</td>
-      <td>5</td>
-      <td>1</td>
-      <td>16</td>
-      <td>3</td>
-      <td>0</td>
-      <td>3</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>13</td>
-      <td>0</td>
-      <td>168</td>
-      <td>33</td>
-      <td>1</td>
-      <td>36</td>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>15</td>
-      <td>4732403000</td>
-      <td>0</td>
-      <td>Panav</td>
-      <td>Myers</td>
-      <td>M</td>
-      <td>paid</td>
-      <td>1538239045000</td>
-      <td>WV</td>
-      <td>Windows</td>
-      <td>2278</td>
-      <td>1302</td>
-      <td>1707</td>
-      <td>15</td>
-      <td>93</td>
-      <td>1914</td>
-      <td>81</td>
-      <td>14</td>
-      <td>59</td>
-      <td>31</td>
-      <td>1</td>
-      <td>27</td>
-      <td>28</td>
-      <td>16</td>
-      <td>8</td>
-      <td>0</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>155</td>
-      <td>0</td>
-      <td>2128</td>
-      <td>150</td>
-      <td>1</td>
-      <td>38</td>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>54</td>
-      <td>3697678000</td>
-      <td>1</td>
-      <td>Alexi</td>
-      <td>Warren</td>
-      <td>F</td>
-      <td>paid</td>
-      <td>1532482662000</td>
-      <td>WA</td>
-      <td>Windows</td>
-      <td>3437</td>
-      <td>1744</td>
-      <td>2414</td>
-      <td>37</td>
-      <td>129</td>
-      <td>2841</td>
-      <td>163</td>
-      <td>29</td>
-      <td>72</td>
-      <td>33</td>
-      <td>47</td>
-      <td>36</td>
-      <td>39</td>
-      <td>17</td>
-      <td>17</td>
-      <td>1</td>
-      <td>5</td>
-      <td>3</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>267</td>
-      <td>0</td>
-      <td>3180</td>
-      <td>257</td>
-      <td>0</td>
-      <td>36</td>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>155</td>
-      <td>2231525000</td>
-      <td>0</td>
-      <td>Camila</td>
-      <td>Calderon</td>
-      <td>F</td>
-      <td>paid</td>
-      <td>1541370470000</td>
-      <td>NH</td>
-      <td>Windows</td>
-      <td>1002</td>
-      <td>643</td>
-      <td>759</td>
-      <td>6</td>
-      <td>30</td>
-      <td>820</td>
-      <td>58</td>
-      <td>3</td>
-      <td>24</td>
-      <td>11</td>
-      <td>8</td>
-      <td>14</td>
-      <td>12</td>
-      <td>5</td>
-      <td>9</td>
-      <td>2</td>
-      <td>2</td>
-      <td>0</td>
-      <td>3</td>
-      <td>1</td>
-      <td>0</td>
-      <td>87</td>
-      <td>0</td>
-      <td>931</td>
-      <td>71</td>
-      <td>0</td>
-      <td>23</td>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>100014</td>
-      <td>3563513000</td>
-      <td>1</td>
-      <td>Rodrigo</td>
-      <td>Carey</td>
-      <td>M</td>
-      <td>paid</td>
-      <td>1535389443000</td>
-      <td>PA</td>
-      <td>Windows</td>
-      <td>310</td>
-      <td>233</td>
-      <td>248</td>
-      <td>6</td>
-      <td>7</td>
-      <td>257</td>
-      <td>17</td>
-      <td>3</td>
-      <td>7</td>
-      <td>6</td>
-      <td>2</td>
-      <td>3</td>
-      <td>3</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>30</td>
-      <td>0</td>
-      <td>294</td>
-      <td>16</td>
-      <td>1</td>
-      <td>30</td>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[104]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
@@ -23373,33 +22371,13 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_df_pca</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[106]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(225, 25)</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -23414,7 +22392,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> \
@@ -23431,7 +22409,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span>
@@ -23441,30 +22419,10 @@ dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[109]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(135, 25)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_val</span><span class="o">.</span><span class="n">shape</span>
@@ -23474,30 +22432,10 @@ dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[110]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(45, 25)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span>
@@ -23507,30 +22445,10 @@ dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[111]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(45, 25)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span>
@@ -23540,30 +22458,10 @@ dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[115]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(135, 1)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#build a logistic regression model</span>
@@ -23576,33 +22474,10 @@ dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[129]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-          intercept_scaling=1, max_iter=100, multi_class=&#39;ovr&#39;, n_jobs=1,
-          penalty=&#39;l2&#39;, random_state=None, solver=&#39;liblinear&#39;, tol=0.0001,
-          verbose=0, warm_start=False)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fit the model with data</span>
@@ -23619,29 +22494,10 @@ dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy:  0.844444444444
-F1:  0.363636363636
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span>
@@ -23653,36 +22509,10 @@ F1:  0.363636363636
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[126]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>RandomForestClassifier(bootstrap=True, class_weight=None, criterion=&#39;gini&#39;,
-            max_depth=None, max_features=&#39;auto&#39;, max_leaf_nodes=None,
-            min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=2,
-            min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=1,
-            oob_score=False, random_state=None, verbose=0,
-            warm_start=False)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[127]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred_test_rf</span><span class="o">=</span> <span class="n">random_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -23695,7 +22525,7 @@ F1:  0.363636363636
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">acc_test_rf</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_pred_test_rf</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
@@ -23706,25 +22536,6 @@ F1:  0.363636363636
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy Random Forest:  0.755555555556
-F1 Random Forest:  0.153846153846
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -23739,7 +22550,7 @@ F1 Random Forest:  0.153846153846
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred_val</span><span class="o">=</span><span class="n">logreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_val</span><span class="p">)</span>
@@ -23752,25 +22563,6 @@ F1 Random Forest:  0.153846153846
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy Valuation:  0.866666666667
-F1 Valuation:  0.785714285714
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
